@@ -1,3 +1,8 @@
 export const AppBar = {
-    "navItems": ["Home", "Skills", "Experience", "Projects", "Contact"]
+    "navItems": ["About", "Skills", "Projects", "Contact"]
+}
+
+export const Skills = {
+    "database": ["SQL", "Reddis"],
+    "language": ["C#", "Javascript", "Java"]
 }
