@@ -9,7 +9,6 @@ import List from '@mui/material/List';
 import ListItem  from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import Grid  from "@mui/material/Unstable_Grid2";
 import ThemeSwitcher from './ThemeSwitcher';
 import { AppBar as constant } from '../constant';
 import { useState } from 'react';
@@ -23,8 +22,8 @@ const Header = () => {
 
     return (
         <>
-            <AppBar component="nav" className='dark:bg-appBarDarkMode'>
-                <Toolbar className="justify-center">
+            <AppBar component="nav" className='dark:bg-appbar-darkMode'>
+                <Toolbar className="justify-start sm:justify-center">
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -44,7 +43,7 @@ const Header = () => {
                 </Toolbar>
                 <ThemeSwitcher className='absolute right-0 m-2'/>        
             </AppBar>
-
+            <Toolbar />
             <nav>
                 <Drawer
                 variant="temporary"
@@ -54,11 +53,11 @@ const Header = () => {
                     keepMounted: true, // Better open performance on mobile.
                 }}
                 >
-                    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+                    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className='dark:bg-appBarDarkMode h-screen '>
                         <List>
                             {constant.navItems.map((item) => (
                             <ListItem key={item} disablePadding>
-                                <ListItemButton sx={{ textAlign: 'center' }}>
+                                <ListItemButton sx={{ textAlign: 'center' }} className='dark:text-textDarkMode hover:border-solid'>
                                 <ListItemText primary={item} />
                                 </ListItemButton>
                             </ListItem>

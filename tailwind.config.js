@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      appBarDarkMode: '#3F2E3E',
-      bodyDarkMode: '#331D2C',
-      textDarkMode: '#EFE1D1'
+      'appbar-darkMode': '#3F2E3E',
+      'body-darkMode': '#331D2C',
+      'text-darkMode': '#EFE1D1'
     }
   },
   plugins: [],

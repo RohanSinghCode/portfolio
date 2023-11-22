@@ -4,7 +4,7 @@ import Header from '../components/Header';
 
 const RootLayout = () => {
     return (
-        <Box className="h-screen dark:bg-bodyDarkMode">
+        <Box className="h-screen dark:bg-body-darkMode">
             <Header />
             <Outlet /> 
         </Box>
