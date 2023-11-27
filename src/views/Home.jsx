@@ -1,6 +1,7 @@
 import Grid  from "@mui/material/Unstable_Grid2";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 const Home = () => {
     return (
@@ -10,6 +11,9 @@ const Home = () => {
             </Grid>        
             <Grid xs={12}>
                 <Skills />
+            </Grid>
+            <Grid xs={12}>
+                <Projects />
             </Grid>
         </Grid>
     )

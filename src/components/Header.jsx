@@ -35,7 +35,7 @@ const Header = () => {
                     </IconButton>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }} >
                         {constant.navItems.map((item) => (
-                        <Button key={item} sx={{color: '#fff','&:hover': {borderBottom: '1px solid #A78295',borderRadius: '0px'}}} className="dark:text-textDarkMode">
+                        <Button key={item} sx={{color: '#fff','&:hover': {borderBottom: '1px solid #A78295',borderRadius: '0px'}}} className="dark:text-text-darkMode">
                             {item}
                         </Button>
                         ))}
@@ -53,11 +53,11 @@ const Header = () => {
                     keepMounted: true, // Better open performance on mobile.
                 }}
                 >
-                    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className='dark:bg-appBarDarkMode h-screen '>
+                    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className='dark:bg-appbar-darkMode h-screen '>
                         <List>
                             {constant.navItems.map((item) => (
                             <ListItem key={item} disablePadding>
-                                <ListItemButton sx={{ textAlign: 'center' }} className='dark:text-textDarkMode hover:border-solid'>
+                                <ListItemButton sx={{ textAlign: 'center'}} className='dark:text-textDarkMode hover:border-solid' >
                                 <ListItemText primary={item} />
                                 </ListItemButton>
                             </ListItem>
