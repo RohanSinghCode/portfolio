@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,13 +7,16 @@ import Typography from '@mui/material/Typography';
 
 const ProjectCard = ({image, title, description, liveUrl, repoUrl}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className='dark:bg-appbar-darkMode'>
+    {
+      image &&
       <CardMedia
         sx={{ height: 140 }}
         image={image}
       />
+    }
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" className='text-text-darkMode'>
           {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -22,8 +24,8 @@ const ProjectCard = ({image, title, description, liveUrl, repoUrl}) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Live</Button>
-        <Button size="small">Code</Button>
+        <Button size="small" href={liveUrl}>Live</Button>
+        <Button size="small" href={repoUrl}>Code</Button>
       </CardActions>
     </Card>
   );
