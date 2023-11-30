@@ -16,7 +16,7 @@ const ProjectCard = ({image, title, description, liveUrl, repoUrl}) => {
       />
     }
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" className='text-text-darkMode'>
+        <Typography gutterBottom variant="h5" component="div" className='dark:text-text-darkMode'>
           {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
