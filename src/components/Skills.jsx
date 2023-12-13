@@ -4,7 +4,7 @@ import { skills } from "../constant";
 
 const Skills = () => {
     return (
-        <>
+        <div name="Skills">
             <Grid container className='my-6'>
                 <Grid xs={12} className='flex justify-center'>
                     <p className='text-6xl  border-b'>
@@ -25,7 +25,7 @@ const Skills = () => {
                     </Grid>
                 </Grid>
             </Grid>
-        </>
+        </div>
     )
 }
 

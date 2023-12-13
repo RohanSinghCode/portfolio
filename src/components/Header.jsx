@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ThemeSwitcher from './ThemeSwitcher';
 import { AppBar as constant } from '../constant';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 
 const Header = () => {
@@ -36,7 +37,9 @@ const Header = () => {
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }} >
                         {constant.navItems.map((item) => (
                         <Button key={item} sx={{color: '#fff','&:hover': {borderBottom: '1px solid #A78295',borderRadius: '0px'}}} className="dark:text-text-darkMode">
-                            {item}
+                            <Link to={item} smooth={true} offset={50} duration={500}>
+                                {item}
+                            </Link>
                         </Button>
                         ))}
                     </Box>
@@ -58,7 +61,9 @@ const Header = () => {
                             {constant.navItems.map((item) => (
                             <ListItem key={item} disablePadding>
                                 <ListItemButton sx={{ textAlign: 'center'}} className='dark:text-textDarkMode hover:border-solid' >
-                                <ListItemText primary={item} />
+                                    <Link to={item} smooth={true} offset={50}>
+                                        <ListItemText primary={item}/>
+                                    </Link>
                                 </ListItemButton>
                             </ListItem>
                             ))}

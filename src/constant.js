@@ -71,11 +71,5 @@ export const projects = [
         "description": "A web app to flex your gaming stats and show off your the gaming library you owned. Some big description la la",
         "liveUrl": "https://www.google.com",
         "repoUrl": "https://github.com/RohanSinghCode/portfolio"
-    },
-    {
-        "title": "Gaming Profile",
-        "description": "A web app to flex your gaming stats and show off your the gaming library you owned. Some big description la la",
-        "liveUrl": "https://www.google.com",
-        "repoUrl": "https://github.com/RohanSinghCode/portfolio"
     }
 ]

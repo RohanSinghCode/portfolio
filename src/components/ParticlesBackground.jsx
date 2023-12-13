@@ -33,7 +33,7 @@ const ParticlesBackground = () => {
                         distance: 200,
                         enable: true,
                         opacity: 0.5,
-                        width: 1,
+                        width: 2,
                     },
                     move: {
                         direction: "none",
@@ -50,7 +50,7 @@ const ParticlesBackground = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 10,
+                        value: 20,
                     },
                     opacity: {
                         value: 0.5,

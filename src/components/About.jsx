@@ -4,7 +4,7 @@ import profileImage from '../static/profile.jpg'
 
 const About = () => {
     return (
-        <>
+        <div name="About">
             <Grid container justifyContent='center' alignContent='center'>
                 <Grid className='text-8xl font-thin mt-4'>
                     ROHAN SINGH
@@ -47,7 +47,7 @@ const About = () => {
                 football pitch, battling in gaming realms, and vibing to diverse beats. Let's code, play, and groove together! <br/>
                 </Grid>
             </Grid>
-    </>
+        </div>
     )
 }
 
