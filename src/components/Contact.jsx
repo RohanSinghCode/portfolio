@@ -1,12 +1,12 @@
 import Grid  from "@mui/material/Unstable_Grid2";
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import useDarkSide from '../hooks/useDarkSide';
 
 
 const Contact = () => {
     const [colorTheme] = useDarkSide();
-    console.log(colorTheme);
     return (
         <div name="Contact">
             <Grid container className='my-6'>
@@ -20,15 +20,15 @@ const Contact = () => {
                         <Grid container  justifyContent={'center'}  spacing={1} className='w-10/12'>
                             <Grid xs={6}>
                                 <TextField  label="Full Name" variant="outlined" fullWidth type="text"
-                                className={colorTheme === 'dark' ? 'custom-text-field' : ''}  
+                                className={colorTheme === 'light' ? 'custom-text-field' : ''}  
                                 InputLabelProps={{
                                 style: { color: 'inherit' },
                                 }}
                                 />
                             </Grid>
                             <Grid xs={6}>
-                                <TextField  label="Email" variant="outlined" fullWidth type="email" autoComplete 
-                                className={colorTheme === 'dark' ? 'custom-text-field' : ''} 
+                                <TextField  label="Email" variant="outlined" fullWidth type="email" autoComplete="true"
+                                className={colorTheme === 'light' ? 'custom-text-field' : ''} 
                                 InputLabelProps={{
                                 style: { color: 'inherit' },
                                 }}
@@ -37,12 +37,15 @@ const Contact = () => {
                             <Grid xs={12}>
                                 <TextField minRows={10} multiline 
                                 fullWidth
-                                className={colorTheme === 'dark' ? 'custom-text-field' : ''}  
+                                className={colorTheme === 'light' ? 'custom-text-field' : ''}  
                                 label="Write Your Message" variant="outlined" type="text"
                                 InputLabelProps={{
                                 style: { color: 'inherit' },
                                 }}
                                 />
+                            </Grid>
+                            <Grid xs={12} >  
+                                <Button  className="border border-solid custom-button">Send</Button>
                             </Grid>
                         </Grid>
                     </Box>

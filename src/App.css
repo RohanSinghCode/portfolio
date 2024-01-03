@@ -40,4 +40,7 @@
   color: beige
 }
 
+.custom-button{
+  color: inherit !important;
+}
   

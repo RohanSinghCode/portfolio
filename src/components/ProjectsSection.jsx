@@ -13,10 +13,11 @@ const ProjectsSection = () => {
             <Grid xs={12} className='mt-4'>
                 <Grid container justifyContent={'center'}>
                 {
-                    projects.map((project) => {
+                    projects.map((project, index) => {
                         return (
-                            <Grid xs={4} className='m-2'>
-                                <ProjectCard title={project.title} description={project.description} liveUrl={project.liveUrl} repoUrl={project.repoUrl} />
+                            <Grid xs={4} className='m-2' key={index}>
+                                <ProjectCard title={project.title} 
+                                description={project.description} liveUrl={project.liveUrl} repoUrl={project.repoUrl}/>
                             </Grid>
                         )
                     })

@@ -14,10 +14,10 @@ const Skills = () => {
                 <Grid xs={12}>
                     <Grid container justifyContent={'center'}>
                         {
-                            skills.map(skill => {
+                            skills.map((skill,index) => {
                                 return (
-                                    <Grid xs={4} className='m-2 w-1/4'>
-                                        <SkillCard name={skill.name} value={skill.value} key={skill.name} />
+                                    <Grid xs={4} className='m-2 w-1/4' key={index}>
+                                        <SkillCard name={skill.name} value={skill.value}  />
                                     </Grid>
                                 )
                             })
