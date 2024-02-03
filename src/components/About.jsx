@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div name="About">
             <Grid container justifyContent='center' alignContent='center'>
-                <Grid className='text-8xl font-thin mt-4'>
+                <Grid className='lg:text-8xl sm:text-2xl font-thin mt-4 text-center'>
                     ROHAN SINGH
                 </Grid>
             </Grid>
@@ -41,7 +41,7 @@ const About = () => {
                 </Grid>
             </Grid>
             <Grid container justifyContent={'center'} alignContent={'center'} >
-                <Grid className='mt-4'>
+                <Grid className='mt-4 px-3 text-center'>
                 Hey there! 👋 I'm a tech enthusiast with 2.5 years of coding adventures as a full-stack developer in DeltaX. I'm all about the hustle,<br/>
                 a quick learner forever keen on picking up the next big thing. Beyond the keyboard, you'll catch me cheering for Barcelona on the<br/>
                 football pitch, battling in gaming realms, and vibing to diverse beats. Let's code, play, and groove together! <br/>
