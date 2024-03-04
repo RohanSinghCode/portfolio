@@ -7,7 +7,7 @@ const ProjectsSection = () => {
         <Grid container className='my-6' name="Projects">
             <Grid xs={12} className='flex justify-center'>
                 <p className='text-6xl  border-b'>
-                    PROJECTS
+                    Experience
                 </p> 
             </Grid>
             <Grid xs={12} className='mt-4'>
@@ -16,8 +16,12 @@ const ProjectsSection = () => {
                     projects.map((project, index) => {
                         return (
                             <Grid xs={4} className='m-2' key={index}>
-                                <ProjectCard title={project.title} 
-                                description={project.description} liveUrl={project.liveUrl} repoUrl={project.repoUrl}/>
+                                <ProjectCard 
+                                title={project.title} 
+                                description={project.description}
+                                position={project.position}
+                                duration={project.duration}
+                                />
                             </Grid>
                         )
                     })

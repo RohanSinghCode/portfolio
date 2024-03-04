@@ -16,7 +16,7 @@ const Skills = () => {
                         {
                             skills.map((skill,index) => {
                                 return (
-                                    <Grid xs={4} className='m-2 w-1/4' key={index}>
+                                    <Grid xs={4} className='m-2 mx-3 w-1/4' key={index}>
                                         <SkillCard name={skill.name} value={skill.value}  />
                                     </Grid>
                                 )

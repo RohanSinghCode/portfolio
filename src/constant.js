@@ -1,5 +1,5 @@
 export const AppBar = {
-    "navItems": ["About", "Skills", "Projects", "Contact"]
+    "navItems": ["About", "Skills", "Experience", "Contact"]
 }
 
 export const skills = [
@@ -55,21 +55,15 @@ export const skills = [
 
 export const projects = [
     {
-        "title": "Gaming Profile",
-        "description": "A web app to flex your gaming stats and show off your the gaming library you owned. Some big description la la",
-        "liveUrl": "https://www.google.com",
-        "repoUrl": "https://github.com/RohanSinghCode/portfolio"
+        "title": "DeltaX",
+        "duration": "Oct 2023 - Present",
+        "position": "SDE - 2",
+        "description": "Established Docker environment and automated deployment with Watchtower. Developed Payment Page for Jiocinema Ads, integrating Razorpay webhook. Provided feature outlines for junior developers, ensuring high-quality code.",
     },
     {
-        "title": "Gaming Profile",
-        "description": "A web app to flex your gaming stats and show off your the gaming library you owned. Some big description la la",
-        "liveUrl": "https://www.google.com",
-        "repoUrl": "https://github.com/RohanSinghCode/portfolio"
-    },
-    {
-        "title": "Gaming Profile",
-        "description": "A web app to flex your gaming stats and show off your the gaming library you owned. Some big description la la",
-        "liveUrl": "https://www.google.com",
-        "repoUrl": "https://github.com/RohanSinghCode/portfolio"
+        "title": "DeltaX",
+        "duration": "Aug 2021 - Oct 2023",
+        "position": "SDE - 1",
+        "description": "Developed microservices and front-end components using .NET Core and Vue. Implemented RESTful APIs and contributed to developing Bizgain from scratch, adding features like Payment Gateway and Push Notification.",
     }
 ]

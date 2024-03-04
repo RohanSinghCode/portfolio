@@ -1,11 +1,9 @@
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const ProjectCard = ({image, title, description, liveUrl, repoUrl}) => {
+const ProjectCard = ({image, title, description, duration, position}) => {
   return (
     <Card sx={{ maxWidth: 345 }} className='dark:bg-appbar-darkMode'>
     {
@@ -16,17 +14,16 @@ const ProjectCard = ({image, title, description, liveUrl, repoUrl}) => {
       />
     }
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" className='dark:text-text-darkMode'>
-          {title}
+        <Typography gutterBottom variant="h5" component="div" className='dark:text-text-darkMode mb-0 pb-0'>
+          {position} ({title})
+        </Typography>
+        <Typography gutterBottom variant="subtitle-1" component="div" className='dark:text-text-darkMode'>
+          {duration}
         </Typography>
         <Typography variant="body2" color="text.secondary">
             {description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" href={liveUrl}>Live</Button>
-        <Button size="small" href={repoUrl}>Code</Button>
-      </CardActions>
     </Card>
   );
 }
