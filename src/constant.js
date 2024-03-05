@@ -58,12 +58,12 @@ export const projects = [
         "title": "DeltaX",
         "duration": "Oct 2023 - Present",
         "position": "SDE - 2",
-        "description": "Established Docker environment and automated deployment with Watchtower. Developed Payment Page for Jiocinema Ads, integrating Razorpay webhook. Provided feature outlines for junior developers, ensuring high-quality code.",
+        "description": "> Established Docker environment and automated deployment with Watchtower. </br> > Developed Payment Page for Jiocinema Ads, integrating Razorpay webhook. <br/> > Provided feature outlines for junior developers, ensuring high-quality code.",
     },
     {
         "title": "DeltaX",
         "duration": "Aug 2021 - Oct 2023",
         "position": "SDE - 1",
-        "description": "Developed microservices and front-end components using .NET Core and Vue. Implemented RESTful APIs and contributed to developing Bizgain from scratch, adding features like Payment Gateway and Push Notification.",
+        "description": "> Developed microservices and front-end components using .NET Core and Vue. </br> > Implemented RESTful APIs and contributed to developing Bizgain from scratch, adding features like Payment Gateway and Push Notification.",
     }
 ]

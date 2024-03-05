@@ -20,8 +20,10 @@ const ProjectCard = ({image, title, description, duration, position}) => {
         <Typography gutterBottom variant="subtitle-1" component="div" className='dark:text-text-darkMode'>
           {duration}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-            {description}
+        <Typography variant="body2" className="dark:text-text-darkMode">
+        <div dangerouslySetInnerHTML={
+                { __html: description }
+             } />
         </Typography>
       </CardContent>
     </Card>
