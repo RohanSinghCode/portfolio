@@ -6,6 +6,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { CircularProgress } from "@mui/material";
 import {Call, Email, LocationOn} from '@mui/icons-material';
+import Alert from '@mui/material/Alert';
 
 
 const Contact = () => {
@@ -15,6 +16,7 @@ const Contact = () => {
     const [isFullNameValid, setIsFullNameValid] = useState(true);
     const [isEmailValid, setIsEmailValid] = useState(true);
     const [isMessageSending, setIsMessageSending] = useState(false);
+    const [isMessagSent, setIsMessageSent] = useState(false);
     const [colorTheme] = useDarkSide();
     function handleFullNameChange(e) {
         setFullName(e.target.value);
@@ -49,7 +51,7 @@ const Contact = () => {
         return true;
         
     }
-    const sendEmail = async () => {
+    const sendEmail = () => {
         try {
             if (validateName() && validateEmail()) {
                 setIsMessageSending(true);
@@ -59,13 +61,15 @@ const Contact = () => {
                     'message': message,
                     'to_name': 'Rohan Singh'
                 }
-                await emailjs.send('service_ssyf1nj', 'template_gp7a3ag', templateParams, 'it8gtTu9xzquTYo54');
-                setFullName('');
-                setEmail('');
-                setMessage('');
+                emailjs.send('service_ssyf1nj', 'template_gp7a3ag', templateParams, 'it8gtTu9xzquTYo54');
             }
         } finally {
+            setIsMessageSent(true);
+            setFullName('');
+            setEmail('');
+            setMessage('');
             setIsMessageSending(false);
+            setIsMessageSent(false);
         }
     }
 
@@ -155,6 +159,7 @@ const Contact = () => {
                                         <span>Send</span>
                                     </LoadingButton>
                                 </Grid>
+                                {isMessagSent && <Alert severity="success">Email Sent!</Alert>}
                             </Grid>
                         </Grid>
                     </Grid>

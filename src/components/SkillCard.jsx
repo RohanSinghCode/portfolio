@@ -1,18 +1,9 @@
-import LinearProgress from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
+import Chip from '@mui/material/Chip';
 
-const SkillCard = ({name, value}) => {
+const SkillCard = ({ name, value }) => {
     return (
-        <>
-            <Typography component="legend" className='font-bold'>{name}</Typography>
-            <LinearProgress
-                name="simple-controlled"
-                value={value}
-                variant="determinate"
-                color='inherit'
-            />
-        </>
-    )
-}
+        <Chip className='font-bold dark:text-text-darkMode dark:bg-appbar-darkMode' label={name} />
+    );
+};
 
 export default SkillCard;

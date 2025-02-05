@@ -4,11 +4,11 @@ export const AppBar = {
 
 export const skills = [
     {
-        "name": "SQL",
+        "name": "T-SQL",
         "value": 90
     },
     {
-        "name": "Reddis",
+        "name": "Redis",
         "value": 80
     },
     {
@@ -50,6 +50,21 @@ export const skills = [
     {
         "name": "REST APIs",
         "value": 95
+    },
+    {
+        "name": "Unit Testing"
+    },
+    {
+        "name": "AWS"
+    },
+    {
+        "name":"IIS"
+    },
+    {
+        "name": "GIT"
+    },
+    {
+        "name": "Kubernetes"
     }
 ]
 

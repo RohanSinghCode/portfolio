@@ -15,7 +15,7 @@ const About = () => {
             </Grid>
             <Grid container justifyContent='center' alignContent='center' className='my-2'>
                 <a href="https://github.com/RohanSinghCode/" target="blank"> <GitHubIcon className="mx-1"/> </a>
-                <a href="https://www.linkedin.com/in/rohan-singh-807b67161/" target="blank"><LinkedInIcon className="mx-1"/> </a>
+                <a href="https://www.linkedin.com/in/rohan-s-807b67161/" target="blank"><LinkedInIcon className="mx-1"/> </a>
                 <a href="https://leetcode.com/rohansingh1999/"><CodeIcon className="mx-1"/> </a>
             </Grid>
             <Grid container justifyContent='center' alignContent='center'>
@@ -50,7 +50,7 @@ const About = () => {
             </Grid>
             <Grid container justifyContent={'center'} alignContent={'center'} >
                 <Grid className='mt-2 px-3 text-center'>
-                Hey there! 👋 I'm a tech enthusiast with 2.5 years of coding adventures as a full-stack developer. I'm all about the hustle,<br/>
+                Hey there! 👋 I'm a tech enthusiast with 4.2 years of coding adventures as a full-stack developer. I'm all about the hustle,<br/>
                 a quick learner forever keen on picking up the next big thing. Beyond the keyboard, you'll catch me cheering for Barcelona on the<br/>
                 football pitch, battling in gaming realms, and vibing to diverse beats. Let's code, play, and groove together! <br/>
                 </Grid>
